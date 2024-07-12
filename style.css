@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.apple-latest-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.latest-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest {
+  margin: 0 20px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.latest img {
+  max-width: 100%;
+  height: auto;
+}
+
+.latest:hover {
+  transform: scale(1);
+}
+@media(max-width:768px){
+  .latest-container{
+    flex-direction: column;
+  }
+}
